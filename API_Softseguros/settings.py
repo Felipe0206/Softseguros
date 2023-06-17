@@ -81,8 +81,15 @@ WSGI_APPLICATION = 'API_Softseguros.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': {'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'railway',
+        'USER': 'root',
+        'PASSWORD': 'pzBaXYglUImpvpTSNSEsT',
+        'HOST': 'hcontainers-us-west-131.railway.app',
+        'PORT': '7479',
+    }
 }
 
 
